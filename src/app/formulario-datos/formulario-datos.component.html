@@ -1,0 +1,9 @@
+<form [formGroup]="checkoutForm" (ngSubmit)="getData()">
+    <label for="typeahead-basic">Nombre:</label>
+    <input id="typeahead-basic" type="text" class="form-control" formControlName="nombre" />
+    <label for="typeahead-basic">Cédula:</label>
+<input id="typeahead-basic" type="text" class="form-control" formControlName="cedula" />
+
+<button type="button" class="btn btn-primary" type="submit" >Enviar</button>        
+</form>
+

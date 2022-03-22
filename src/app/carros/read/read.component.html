@@ -1,0 +1,21 @@
+<div>
+  <button (click)="consumir()">Ver Carros</button>
+</div>
+
+<div>
+  <table>
+    <tr>
+      <th scope="col">Usuario</th>
+      <th scope="col">Id</th>
+      <th scope="col">Titlo</th>
+      <th scope="col">Cuerpo</th>
+    </tr>
+
+    <tr *ngFor="let estructura of this.datos">
+      <td scope="row">{{ estructura.userId }}</td>
+      <td>{{ estructura.id }}</td>
+      <td>{{ estructura.title }}</td>
+      <td>{{ estructura.body }}</td>
+    </tr>
+  </table>
+</div>

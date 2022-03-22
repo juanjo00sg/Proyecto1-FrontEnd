@@ -1,0 +1,14 @@
+.container{
+    height: 100vh;
+    background-color: azure;
+}
+.header{
+    height: 30%;
+    background-color: aqua;
+}
+.section{
+    height: 60%;
+}
+.footer{
+    height: 10%;
+}
