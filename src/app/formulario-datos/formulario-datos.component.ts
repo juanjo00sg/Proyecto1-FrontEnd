@@ -9,13 +9,15 @@ import { RemotoService } from '../remoto.service';
 })
 export class FormularioDatosComponent implements OnInit {
 
-  nombre = "";
-  cedula = "";
+  marca = "";
+  placa = "";
+  color = "";
   checkoutForm;
   constructor(private formBuilder: FormBuilder,private informacionWeb:RemotoService ) { 
     this.checkoutForm = this.formBuilder.group({
-      nombre: '',
-      cedula: ''
+      marca: '',
+      placa: '',
+      color: ''
     });
   }
 
@@ -23,9 +25,10 @@ export class FormularioDatosComponent implements OnInit {
   }
   public getData() {
     
-    this.nombre = this.checkoutForm.value.nombre;
-    this.cedula = this.checkoutForm.value.cedula;
-    console.log(this.nombre, this.cedula)
-    this.informacionWeb.getDatos(this.cedula, this.nombre).subscribe(data=>{alert(data)});
+    this.placa = this.checkoutForm.value.placa;
+    this.marca = this.checkoutForm.value.marca;
+    this.color = this.checkoutForm.value.color;
+    console.log(this.placa, this.marca, this.color)
+    this.informacionWeb.getDatos(this.placa, this.marca, this.color).subscribe(data=>{alert(data)});
   }
 }

@@ -1,9 +1,25 @@
 <form [formGroup]="checkoutForm" (ngSubmit)="getData()">
-    <label for="typeahead-basic">Nombre:</label>
-    <input id="typeahead-basic" type="text" class="form-control" formControlName="nombre" />
-    <label for="typeahead-basic">Cédula:</label>
-<input id="typeahead-basic" type="text" class="form-control" formControlName="cedula" />
+  <label for="typeahead-basic">Placa:</label>
+  <input
+    id="typeahead-basic"
+    type="text"
+    class="form-control"
+    formControlName="placa"
+  />
+  <label for="typeahead-basic">Marca:</label>
+  <input
+    id="typeahead-basic"
+    type="text"
+    class="form-control"
+    formControlName="marca"
+  />
+  <label for="typeahead-basic">Color:</label>
+  <input
+    id="typeahead-basic"
+    type="text"
+    class="form-control"
+    formControlName="color"
+  />
 
-<button type="button" class="btn btn-primary" type="submit" >Enviar</button>        
+  <button type="button" class="btn btn-primary" type="submit">Enviar</button>
 </form>
-

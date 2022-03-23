@@ -9,11 +9,10 @@ export class RemotoService {
 
   constructor(private datos: HttpClient) { }
 
-  public getDatos(ced, nom) {
+  public getDatos(marca, placa, color) {
 
-    //return this.datos.get<Ihttp[]>(('https://jsonplaceholder.typicode.com/posts'))
-    console.log(ced, nom)
-    return this.datos.post('http://127.0.0.1:1337/usuarios', { cedU: ced, nomU: nom });
+    //return this.datos.get<Ihttp[]>(('https://jsonplaceholder.typicode.com/posts'))    
+    return this.datos.post('http://127.0.0.1:1337/carros', {  placa: placa, marca: marca ,color: color});
     
    }
 }
